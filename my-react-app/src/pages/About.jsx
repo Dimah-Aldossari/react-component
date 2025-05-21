@@ -1,7 +1,13 @@
 import React from "react";
+import Nav from "../component/Nav";
 
 function About() {
-  return <div>About</div>;
+  return (
+    <div>
+      {/* <Nav /> */}
+      About
+    </div>
+  );
 }
 
 export default About;

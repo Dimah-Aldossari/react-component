@@ -1,16 +1,21 @@
-import { Link } from "react-router-dom";
-import Home from "../pages/Home";
+import { Link } from "react-router";
+
 function Nav() {
   return (
     <>
       <nav>
         <ul>
-          <li>
-            <Link to="./home">Home</Link>
-          </li>
+          <Link to="home">
+            <li>Home</li>
+          </Link>
 
-          <li>About</li>
-          <li>Contact</li>
+          <Link to="/about">
+            <li>About</li>
+          </Link>
+
+          <Link to="contact">
+            <li>Contact</li>
+          </Link>
         </ul>
       </nav>
     </>
