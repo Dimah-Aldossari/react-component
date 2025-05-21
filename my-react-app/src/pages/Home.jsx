@@ -1,14 +1,17 @@
 import React from "react";
 import Nav from "../component/Nav";
+import Pages from "../Pages";
+import { useNavigate } from "react-router";
 
 function Home() {
+  let navigate = useNavigate();
+
+  const mainPage = () => {
+    navigate("./Pages");
+  };
   return (
     <div>
-      {/* <Nav /> */}
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
-      rem debitis rerum eveniet expedita id voluptate animi excepturi ut
-      asperiores sint vel et quibusdam laudantium fugiat quidem, atque
-      praesentium magnam!
+      <button onClick={mainPage}>go to Pages</button>
     </div>
   );
 }
