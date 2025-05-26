@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Pages from "../Pages";
-
+import State from "../pages/State";
 function Layout() {
   return (
     <>
@@ -25,6 +25,7 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
       { path: "Pages", element: <Pages /> },
+      { path: "State", element: <State /> },
     ],
   },
 ]);

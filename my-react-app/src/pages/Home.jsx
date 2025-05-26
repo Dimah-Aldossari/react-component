@@ -11,7 +11,7 @@ function Home() {
   };
   return (
     <div>
-      <button onClick={mainPage}>go to Pages</button>
+      <button onClick={mainPage()}>go to Pages</button>
     </div>
   );
 }
