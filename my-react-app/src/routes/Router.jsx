@@ -6,6 +6,9 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Pages from "../Pages";
 import State from "../pages/State";
+import Effect from "../pages/Effect";
+import RecyMortey from "../pages/RecyMortey";
+import CharacterDetails from "../pages/CharacterDetails";
 function Layout() {
   return (
     <>
@@ -26,6 +29,9 @@ const router = createBrowserRouter([
       { path: "contact", element: <Contact /> },
       { path: "Pages", element: <Pages /> },
       { path: "State", element: <State /> },
+      { path: "Effect", element: <Effect /> },
+      { path: "RecyMortey", element: <RecyMortey /> },
+      { path: "CharacterDetails/:id", element: <CharacterDetails /> },
     ],
   },
 ]);
