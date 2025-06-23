@@ -11,6 +11,7 @@ import RecyMortey from "../pages/RecyMortey";
 import CharacterDetails from "../pages/CharacterDetails";
 import Login from "../pages/Login";
 import Read from "../pages/Read";
+import Update from "../pages/Update";
 function Layout() {
   return (
     <>
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
       { path: "CharacterDetails/:id", element: <CharacterDetails /> },
       { path: "Login", element: <Login /> },
       { path: "Read", element: <Read /> },
+      { path: "Update/:id", element: <Update /> },
     ],
   },
 ]);

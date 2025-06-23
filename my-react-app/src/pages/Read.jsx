@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 
 function Read() {
   const [userName, setUserName] = useState([]);
@@ -34,6 +35,9 @@ function Read() {
               >
                 delete
               </button>
+              <Link to={`/Update/${item.id}`}>
+                <button type="button">ubdate</button>
+              </Link>
             </div>
           );
         })}
